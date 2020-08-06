@@ -3,7 +3,7 @@ import { Pessoa } from "./Pessoa";
 export class Fornecedor {
     id: string;
     pessoaFornecedor: Pessoa;
-    informacaoContribuinte: string;
+    informacaoContribuinte?: string;
     naturezaCredito: {
         id: any;
         codigoNaturezaCredito: any;
@@ -11,7 +11,7 @@ export class Fornecedor {
     };
     tipoFornecimento?: string;
 
-    constructor (pessoaFornecedor: Pessoa, informacaoContribuinte: string,
+    constructor (pessoaFornecedor: Pessoa, informacaoContribuinte?: string,
         naturezaCredito?: any, id?: any, tipoFornecimento?: string){
 
             this.id = id;
