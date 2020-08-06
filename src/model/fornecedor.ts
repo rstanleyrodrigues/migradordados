@@ -9,9 +9,9 @@ export class Fornecedor {
         codigoNaturezaCredito: any;
         descricaoNaturezaCredito: string;        
     };
-    tipoFornecimento: string;
+    tipoFornecimento?: string;
 
-    Fornecedor (pessoaFornecedor: Pessoa, informacaoContribuinte: string,
+    constructor (pessoaFornecedor: Pessoa, informacaoContribuinte: string,
         naturezaCredito?: any, id?: any, tipoFornecimento?: string){
 
             this.id = id;

@@ -1,11 +1,9 @@
-
-const fornecedor = require('./fornecedor.ts')
-
+import {Fornecedor} from './fornecedor';
 export class FornecedorConversao {
     idLegado: string;
     fornecedor: Fornecedor;
 
-    FornecedorConversao (idLegado: string, fornecedor: Fornecedor){
+    constructor (idLegado: string, fornecedor: Fornecedor){
         this.idLegado = idLegado;
         this.fornecedor = fornecedor;
     }

@@ -15,17 +15,17 @@ export class PessoaFisica extends Pessoa {
                       descricaoGrupoCBO: string;
                     }  
         };
-    numeroContrIndividualINSS: string;
-    numeroPISPASEP: string;  
+    numeroContrIndividualINSS?: string;
+    numeroPISPASEP?: string;  
     documentos: [];
 
-    PessoaFisica (cpf: string, nome: string, 
+    constructor (cpf: string, nome: string, 
         cboPessoaFisica?: any, 
         numeroContrIndividualINSS?: string, 
         numeroPISPASEP?: string,
         documentos?: any){
 
-        this.tipoPessoa = TipoPessoa.PESSOA_FISICA;
+        super(TipoPessoa.PESSOA_FISICA);
         this.cboPessoaFisica = cboPessoaFisica;
         this.cpf = cpf;
         this.nome = nome;

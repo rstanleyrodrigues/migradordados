@@ -6,4 +6,8 @@ export class Pessoa {
     emails = [];
     endereco = [];
     listaTelefone = [];
+
+    constructor (tipoPessoa: TipoPessoa){
+        this.tipoPessoa = tipoPessoa;
+    }
 }
