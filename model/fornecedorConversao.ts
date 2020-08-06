@@ -1,6 +1,4 @@
-
-const fornecedor = require('./fornecedor.ts')
-
+import {Fornecedor} from './Fornecedor';
 export class FornecedorConversao {
     idLegado: string;
     fornecedor: Fornecedor;
